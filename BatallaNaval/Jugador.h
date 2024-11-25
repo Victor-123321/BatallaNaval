@@ -13,11 +13,11 @@ private:
     string nombre;
     Tablero tablero;
     vector<Nave> naves;
+    Tablero tableroRival; // Para registrar ataques al enemigo
 
 public:
     Jugador(const string& nombre);
 
-    Tablero tableroRival; // Para registrar ataques al enemigo
     void PonerNaves();
     string getNombre() const;
     string Atacar(int fila, int columna, Jugador& jugador);

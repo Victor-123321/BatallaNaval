@@ -37,9 +37,3 @@ bool Referee::VerificarDerrota(Jugador& jugador) {
     // Si todas las naves estan hundidas, el jugador pierde.
     return jugador.getTablero().TodasNavesHundidas();
 }
-
-void Referee::RegistrarAccion(const std::string& accion) {
-    logs.push_back(accion);
-    std::cout << "Accion registrada: " << accion << std::endl;
-}
-

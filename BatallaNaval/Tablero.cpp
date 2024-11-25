@@ -61,12 +61,11 @@ string Tablero::RecibirAtaque(int fila, int columna) {
 
     char& celda = celdas[fila][columna];
 
-    if (celda == 'X' || celda == '~') {
+    if (celda == 'X') {
         return "repetido";
     }
 
     if (celda == '~') {
-        celda = 'O'; 
         return "agua";
     }
 

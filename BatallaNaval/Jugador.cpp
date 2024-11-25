@@ -45,7 +45,7 @@ string Jugador::Atacar(int fila, int columna, Jugador& atacante) {
         return resultado;
     }
     atacante.tableroRival.PonerEnCelda(fila, columna, 'M');
-    return "";
+        return resultado;
 }
 
 Tablero Jugador::getTablero(){

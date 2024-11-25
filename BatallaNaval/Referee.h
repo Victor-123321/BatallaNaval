@@ -20,8 +20,6 @@ public:
     // Verifica si un jugador ha perdido (todas las naves hundidas).
     bool VerificarDerrota(Jugador& jugador) ;
 
-    // Agregar al registro una accion (opcional para debug o historial).
-    void RegistrarAccion(const std::string& accion);
 };
 
 #endif // referee_H
