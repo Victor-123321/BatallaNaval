@@ -7,7 +7,7 @@ Referee::Referee() {}
 bool Referee::ValidarColocacion(const Nave& nave, int fila, int columna, char orientacion, const Tablero& tablero) {
     int longitud = nave.getLongitud();
 
-    // Validar si la nave cabe en los límites del tablero.
+    // Validar si la nave cabe en los limites del tablero.
     if (orientacion == 'H') {
         if (columna + longitud > 10) return false;
         for (int i = 0; i < longitud; i++) {
@@ -21,20 +21,20 @@ bool Referee::ValidarColocacion(const Nave& nave, int fila, int columna, char or
         }
     }
     else {
-        return false; // Orientación inválida.
+        return false; // Orientacion invalida.
     }
 
     return true; // Si pasa todas las validaciones.
 }
 
 bool Referee::ValidarAtaque(int fila, int columna, const Tablero& tablero) const {
-    // Verificar si la posición está dentro del rango del tablero.
+    // Verificar si la posicion esta dentro del rango del tablero.
     int dimensiones = 10;
     return fila >= 0 && fila < dimensiones && columna >= 0 && columna < dimensiones;
 }
 
-bool Referee::VerificarDerrota(const Jugador& jugador) const {
-    // Si todas las naves están hundidas, el jugador pierde.
+bool Referee::VerificarDerrota(Jugador& jugador) {
+    // Si todas las naves estan hundidas, el jugador pierde.
     return jugador.getTablero().TodasNavesHundidas();
 }
 

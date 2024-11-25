@@ -12,16 +12,17 @@ class Jugador {
 private:
     string nombre;
     Tablero tablero;
-    Tablero tableroRival; // Para registrar ataques al enemigo
     vector<Nave> naves;
 
 public:
     Jugador(const string& nombre);
 
+    Tablero tableroRival; // Para registrar ataques al enemigo
     void PonerNaves();
     string getNombre() const;
-    bool Atacar(int fila, int columna);
-    Tablero getTablero() const;
+    string Atacar(int fila, int columna, Jugador& jugador);
+    Tablero getTablero();
+    Tablero getTableroDisparos();
 };
 
 #endif // JUGADOR_H

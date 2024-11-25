@@ -18,6 +18,7 @@ public:
     bool TodasNavesHundidas() const;
     string RecibirAtaque(int fila, int columna);
     char ObtenerCelda(int fila, int columna) const;
+    void PonerEnCelda(int fila, int columna, char caracter);
 };
 
 #endif // TABLERO_H

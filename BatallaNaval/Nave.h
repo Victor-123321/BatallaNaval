@@ -12,7 +12,7 @@ private:
     int longitud;
     char orientacion;
     vector<pair<int, int>> posiciones; // Coordenadas en el tablero
-    vector<bool> impactos; // Marcar qué partes fueron atacadas
+    vector<bool> impactos; // Marcar que partes fueron atacadas
 
 public:
     Nave(const string& tipo, int longitud);

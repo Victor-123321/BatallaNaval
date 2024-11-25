@@ -18,6 +18,9 @@ public:
     void IniciarPartida();
     void JugarTurno();
     void FinalizarPartida();
+
+    Jugador getJugador1() const;
+    Jugador getJugador2() const;
 };
 
 #endif // JUEGO_H
