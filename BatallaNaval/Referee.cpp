@@ -30,7 +30,7 @@ bool Referee::ValidarColocacion(const Nave& nave, int fila, int columna, char or
 bool Referee::ValidarAtaque(int fila, int columna, const Tablero& tablero) const {
     // Verificar si la posicion esta dentro del rango del tablero.
     int dimensiones = 10;
-    return fila >= 0 && fila < dimensiones && columna >= 0 && columna < dimensiones;
+    return fila > 0 && fila < dimensiones && columna > 0 && columna < dimensiones;
 }
 
 bool Referee::VerificarDerrota(Jugador& jugador) {

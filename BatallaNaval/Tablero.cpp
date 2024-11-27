@@ -98,7 +98,7 @@ string Tablero::RecibirAtaque(int fila, int columna) {
 bool Tablero::TodasNavesHundidas() const {
     for (const auto& fila : celdas) {
         for (const char celda : fila) {
-            if (celda != '~') return false;
+            if (celda != '~' && celda != 'X') return false;
         }
     }
     return true;

@@ -25,5 +25,5 @@ public:
     Tablero getTableroDisparos();
 };
 
-#endif // JUGADOR_H
+#endif 
 

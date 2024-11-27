@@ -11,8 +11,7 @@ private:
     string tipo;
     int longitud;
     char orientacion;
-    vector<pair<int, int>> posiciones; // Coordenadas en el tablero
-    vector<bool> impactos; // Marcar que partes fueron atacadas
+    vector<pair<int, int>> posiciones;
 
 public:
     Nave(const string& tipo, int longitud);
@@ -20,9 +19,7 @@ public:
     void EstablecerPosiciones(const std::vector<std::pair<int, int>>& coords);
     int getLongitud() const;
     string getTipo() const;
-    bool Impacto(int fila, int columna);
-    bool EstaHundido() const;
 };
 
-#endif // NAVE_H
+#endif 
 

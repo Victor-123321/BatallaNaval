@@ -31,6 +31,9 @@ int main() {
     while (true) {
 
         while (true) {
+            if (juego.FinalizarPartida()) {
+                return 0;
+            }
             mostrarMenu();
             int opcion;
             cin >> opcion;
